@@ -1,18 +1,23 @@
-# 💻 Assignment Boilerplate
+# 💻 Birds of Ohio: A Backyard Field Guide
 
-A starting point for assignment and exercise repos. It includes submission instructions, editor and Git configuration,
-and a pull request template so every assignment works the same way.
+A four-page field guide to five backyard birds of Ohio, built for Web Design I. It uses
+responsive photos in AVIF, WebP, and JPEG, a captioned video, and recordings of each bird's
+song, all in a mobile-first single-column layout.
+
+This repo also includes the editor and Git configuration and the pull request template that every
+assignment in this course uses.
 
 > [!NOTE]
 > `.editorconfig`, `.gitattributes`, `.gitignore`, `.noai`, and the `.github` and `.idea`
-> folders are setup files that keep assignments consistent. Leave them alone.
+> folders are setup files that keep assignments consistent. Leave them alone. The four HTML
+> pages and the `css`, `images`, `video`, and `audio` folders are the site.
 
 ## 📋 Assignment Requirements
 
 > [!IMPORTANT]
 > **Start here: [read ASSIGNMENT.md →](.github/ASSIGNMENT.md)**
 
-It has the requirements, grading criteria, and due date. Read it before you start, and check it again before you submit.
+It has the overview, the requirements for each page, a final checklist, and the grading rubric. Read it before you start, and check it again before you submit.
 
 ## ✅ At a Glance
 
@@ -22,17 +27,37 @@ Every assignment follows the same steps. Each guide has screenshots for every st
 |------|----------------------------------------------------------------------------|-----------------------------------------------|
 | 0    | **First assignment only:** install and set up WebStorm                     | [WebStorm Setup](.github/WEBSTORM_SETUP.md)   |
 | 1    | Create your repo from this template, clone it, and make a `develop` branch | [Getting Started](.github/GETTING_STARTED.md) |
-| 2    | Build your page in the root folder                                         | [Where Your Files Go](#-where-your-files-go)  |
+| 2    | Build your pages in the root folder                                        | [Where Your Files Go](#-where-your-files-go)  |
 | 3    | Commit and push often, then turn on GitHub Pages                           | [Publishing](.github/PUBLISHING.md)           |
 | 4    | Open a pull request into `main` and submit its URL in Canvas               | [Submitting](.github/SUBMITTING.md)           |
 
 ## 📂 Where Your Files Go
 
 Create your files in the **root folder** of this repo — the same folder as this README.
-GitHub Pages publishes from the root, so `index.html` has to live there or your site will 404. Group your assets into
-subfolders:
+GitHub Pages publishes from the root, so `index.html` has to live there or your site will 404.
+The pages sit in the root, and the media is grouped into subfolders:
 
-<img src=".github/images/webstorm-project-files.png" alt="The WebStorm Project panel showing index.html in the root folder, with css/style.css, images/photo.jpg, and js/script.js in their own subfolders, all highlighted" width="350">
+```
+index.html
+photos.html
+video.html
+songs.html
+css/styles.css
+images/logo.svg
+images/hero.jpg, hero-small.jpg (plus .avif and .webp)
+images/<bird>.jpg, <bird>-small.jpg (plus .avif and .webp)
+video/cardinal.webm
+video/cardinal.mp4
+video/cardinal-poster.jpg
+video/cardinal-captions.vtt
+audio/<bird>.ogg
+audio/<bird>.m4a
+audio/<bird>.mp3
+```
+
+`<bird>` is one of `northern-cardinal`, `carolina-wren`, `american-robin`, `blue-jay`, or
+`red-winged-blackbird`. Your `src` and `srcset` paths need the folder name, like
+`images/blue-jay.jpg` or `audio/blue-jay.mp3`. File names are lowercase with no spaces.
 
 ## 🤖 AI Policy
 

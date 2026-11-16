@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video | Birds of Ohio</title>
+  <meta name="description" content="Video of a Northern Cardinal singing, with captions.">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <p class="site-name">
+      <a href="index.html"><img src="images/logo.svg" alt="" width="72" height="44"> Birds of Ohio</a>
+    </p>
+    <p class="tagline">A backyard field guide to the Buckeye State</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="video.html" aria-current="page">Video</a></li>
+        <li><a href="songs.html">Songs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Video</h1>
+    <p class="intro">A Northern Cardinal singing from a branch. Turn on captions with the <strong>CC</strong> button.</p>
+
+    <figure class="card">
+      <video controls preload="metadata" poster="video/cardinal-poster.jpg" width="640" height="360">
+        <source src="video/cardinal.webm" type="video/webm">
+        <source src="video/cardinal.mp4" type="video/mp4">
+        <track kind="captions" src="video/cardinal-captions.vtt" srclang="en" label="English" default>
+        <p>Your browser can't play this video. <a href="video/cardinal.mp4">Download the video</a> instead.</p>
+      </video>
+      <figcaption>A male Northern Cardinal singing. <span class="credit">Video: placeholder, license to come</span></figcaption>
+    </figure>
+
+    <section class="card">
+      <h2>What to Watch For</h2>
+      <p>Cardinals often sing from a high, open perch, tilting their heads back with each phrase. Males sing to defend their territory, but female cardinals sing too, which is unusual among North American songbirds.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>The Northern Cardinal has been Ohio&rsquo;s state bird since 1933.</small></p>
+    <p><small>Photos and recordings are credited on each page. Placeholder media in this prototype.</small></p>
+    <p><small>&copy; 2027 Birds of Ohio, a field guide built for Web Design I.</small></p>
+  </footer>
+</body>
+</html>
