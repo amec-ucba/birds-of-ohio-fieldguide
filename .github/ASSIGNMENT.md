@@ -18,8 +18,8 @@ Weeks 4–6.
 
 By completing this assignment, you will practice how to:
 
-- Link several pages together with shared navigation and mark the current page with
-  `aria-current="page"`
+- Link several pages together with shared navigation and mark the current page with a
+  `current` class
 - Serve images in AVIF, WebP, and JPEG with `picture` and `source`
 - Let the browser pick an image size with `srcset` and `sizes`
 - Prevent layout shift with `width` and `height`, and defer offscreen images with
@@ -53,7 +53,7 @@ navigation, and footer:
 - [ ] Links to the Google Fonts (Bitter and Source Sans 3) and to `css/styles.css`
 - [ ] A `header` with the logo and site name (linking to `index.html`), a tagline, and a
       `nav` list linking to all four pages
-- [ ] The current page's nav link has `aria-current="page"`
+- [ ] The current page's nav link has `class="current"`
 - [ ] One `h1`, with `h2`s for sections
 - [ ] A `footer` with the state bird fact, a media credit note, and a copyright line
 
@@ -146,7 +146,7 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 
 | Criteria | Full credit looks like | Points |
 | --- | --- | --- |
-| **Page structure & navigation** | Four valid pages with a matching header, nav, and footer, a unique `title` and description, and `aria-current` on the current link | 4 |
+| **Page structure & navigation** | Four valid pages with a matching header, nav, and footer, a unique `title` and description, and the `current` class on the current link | 4 |
 | **Responsive images** | Every photo uses `picture` with AVIF, WebP, and JPEG, a `srcset` with two sizes, `sizes`, `width`/`height`, and lazy loading where required | 5 |
 | **Alt text & credits** | Descriptive `alt` on every photo, `alt=""` on the decorative logo, and a credit on every photo, video, and recording | 2 |
 | **Video** | Plays with controls, a poster, WebM and MP4 sources, working captions, and a fallback link; the YouTube `iframe` plays and has a descriptive `title` | 3 |
