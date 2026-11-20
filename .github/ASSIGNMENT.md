@@ -1,13 +1,9 @@
 # 📄 Birds of Ohio: A Backyard Field Guide
 
+## 🎯 Overview
+
 Build a four-page field guide to five backyard birds of Ohio, with responsive photos, a
 captioned video, and recordings of each bird's song.
-
-**Course:** AMEC — Web Design I
-**Due:** See Canvas.
-**Points:** 20
-
-## 🎯 Overview
 
 Most birders hear a bird long before they see it, so a good field guide needs more than
 pictures. In this assignment you build a small multi-page site that uses every kind of media
@@ -18,7 +14,7 @@ The layout is mobile-first: one stacked column with a header, navigation, main c
 footer. You won't use Flexbox or Grid yet. Everything is built with the HTML and CSS from
 Weeks 4–6.
 
-## 🧠 What You Will Learn
+### 🧠 What You'll Practice
 
 By completing this assignment, you will practice how to:
 
@@ -102,13 +98,27 @@ navigation, and footer:
 - [ ] Credits use a shared `.credit` style
 - [ ] No Flexbox or Grid
 
+### ✅ Before You Submit
+
+- [ ] All four pages open from the navigation on every page, and the current page is marked
+- [ ] Every photo loads, and your browser's dev tools show it picked an AVIF or WebP file
+- [ ] The video plays, and captions show when you turn on **CC**
+- [ ] The YouTube video plays and fits the column at phone width
+- [ ] All five recordings play
+- [ ] The "Meet the Birds" links on the home page jump to the right card on the Songs page
+- [ ] Nothing overflows the page at phone width
+- [ ] Every page passes the [W3C Markup Validation Service](https://validator.w3.org/)
+- [ ] File names are lowercase with no spaces, and they match your `src` paths exactly
+- [ ] The site is live on GitHub Pages, every media file works there, and the URL is in your
+      pull request
+
 ## 🖼️ Example Output
 
 When you're done, open `index.html` in a browser and click through every page. Resize the
 window to phone width: the hero should bleed to the screen edges, and every photo, video, and
 audio player should stay inside the single column.
 
-## 📂 Files
+## 📂 Starter Files
 
 | File / Folder | Purpose |
 | --- | --- |
@@ -132,20 +142,6 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 > The photos, video, and recordings are placeholders. Their credits read "placeholder"
 > until licensed media replaces them.
 
-## ✅ Before You Submit
-
-- [ ] All four pages open from the navigation on every page, and the current page is marked
-- [ ] Every photo loads, and your browser's dev tools show it picked an AVIF or WebP file
-- [ ] The video plays, and captions show when you turn on **CC**
-- [ ] The YouTube video plays and fits the column at phone width
-- [ ] All five recordings play
-- [ ] The "Meet the Birds" links on the home page jump to the right card on the Songs page
-- [ ] Nothing overflows the page at phone width
-- [ ] Every page passes the [W3C Markup Validation Service](https://validator.w3.org/)
-- [ ] File names are lowercase with no spaces, and they match your `src` paths exactly
-- [ ] The site is live on GitHub Pages, every media file works there, and the URL is in your
-      pull request
-
 ## 🧮 Grading
 
 | Criteria | Full credit looks like | Points |
@@ -159,7 +155,22 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 | **Published and submitted** | Live on GitHub Pages with working media, and the pull request is filled in and submitted in Canvas | 1 |
 | | **Total** | **20** |
 
-## 🛠️ Troubleshooting
+## 📚 Resources
+
+- [MDN — Responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
+- [MDN — `<picture>`: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
+- [MDN — Video and audio content](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
+- [MDN — `<iframe>`: The Inline Frame element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
+- [MDN — `<track>`: The Embed Text Track element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track)
+- [MDN — WebVTT format](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API/Web_Video_Text_Tracks_Format)
+- [W3C — Alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/)
+- [W3C Markup Validation Service](https://validator.w3.org/)
+
+## 🆘 Getting Help
+
+Ask during class or office hours, or post on the Canvas discussion board.
+
+Before you ask, check these common problems:
 
 - **A photo or media file doesn't load on GitHub Pages but works locally?** GitHub Pages is
   case-sensitive. `Blue-Jay.jpg` won't find `blue-jay.jpg`.
@@ -171,17 +182,6 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
   match the card's `id` exactly.
 - **An image is wider than the screen?** Check that `img, video { max-width: 100%; height: auto; }`
   is in your stylesheet.
-
-## 📚 Resources
-
-- [MDN — Responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
-- [MDN — `<picture>`: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
-- [MDN — Video and audio content](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
-- [MDN — `<iframe>`: The Inline Frame element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
-- [MDN — `<track>`: The Embed Text Track element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track)
-- [MDN — WebVTT format](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API/Web_Video_Text_Tracks_Format)
-- [W3C — Alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/)
-- [W3C Markup Validation Service](https://validator.w3.org/)
 
 ---
 
