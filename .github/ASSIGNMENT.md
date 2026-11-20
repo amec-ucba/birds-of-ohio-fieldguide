@@ -31,10 +31,12 @@ By completing this assignment, you will practice how to:
 - Write useful `alt` text, and know when an image should have an empty `alt=""`
 - Embed video with `video`, multiple `source` formats, a `poster`, and a WebVTT captions
   `track`
+- Embed a YouTube video with an `iframe` and a descriptive `title`
 - Embed audio with `audio` and multiple `source` formats, with a fallback link and a text
   description
 - Credit photos, video, and recordings with their license
-- Keep media inside its column with `max-width: 100%`
+- Keep media inside its column with `max-width: 100%`, and keep an embedded video at 16:9 with
+  `aspect-ratio`
 
 ## 📋 Requirements
 
@@ -45,7 +47,7 @@ navigation, and footer:
 | --- | --- |
 | `index.html` | A full-width hero image, an intro paragraph, links to the other three pages, and a "Meet the Birds" list that links to each bird on the Songs page |
 | `photos.html` | One photo card per bird (five total), each a `figure` with a `figcaption` and a photo credit |
-| `video.html` | A captioned video of a Northern Cardinal in a `figure`, plus a short "What to Watch For" section |
+| `video.html` | A captioned video of a Northern Cardinal in a `figure`, an embedded YouTube video in a second `figure`, plus a short "What to Watch For" section |
 | `songs.html` | One card per bird with an `id`, a "Listen for" line, an audio player, a written description, and a recording credit |
 
 ### Every page
@@ -78,6 +80,8 @@ navigation, and footer:
 - [ ] A captions `track` that loads `video/cardinal-captions.vtt`, with `srclang`, `label`,
       and `default`
 - [ ] A fallback paragraph with a download link
+- [ ] A YouTube video embedded with an `iframe` in a `figure`, with a descriptive `title`,
+      `width`, `height`, `loading="lazy"`, and `allowfullscreen`, plus a `figcaption` and credit
 
 ### Audio
 
@@ -91,7 +95,8 @@ navigation, and footer:
 ### CSS
 
 - [ ] One shared stylesheet, `css/styles.css`, used by every page
-- [ ] Images and video never overflow their column (`max-width: 100%; height: auto`), and
+- [ ] Images and video never overflow their column (`max-width: 100%; height: auto`), the
+      YouTube `iframe` fills the column at 16:9 (`width: 100%; aspect-ratio: 16 / 9`), and
       audio players fill the column width
 - [ ] Media is grouped into cards with a shared `.card` style
 - [ ] Credits use a shared `.credit` style
@@ -99,9 +104,9 @@ navigation, and footer:
 
 ## 🖼️ Example Output
 
-The pages in this repo are a working example of the finished site. Open `index.html` in a
-browser and click through every page. Resize the window to phone width: the hero bleeds to
-the screen edges, and every photo, video, and audio player stays inside the single column.
+When you're done, open `index.html` in a browser and click through every page. Resize the
+window to phone width: the hero should bleed to the screen edges, and every photo, video, and
+audio player should stay inside the single column.
 
 ## 📂 Files
 
@@ -132,6 +137,7 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 - [ ] All four pages open from the navigation on every page, and the current page is marked
 - [ ] Every photo loads, and your browser's dev tools show it picked an AVIF or WebP file
 - [ ] The video plays, and captions show when you turn on **CC**
+- [ ] The YouTube video plays and fits the column at phone width
 - [ ] All five recordings play
 - [ ] The "Meet the Birds" links on the home page jump to the right card on the Songs page
 - [ ] Nothing overflows the page at phone width
@@ -147,7 +153,7 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 | **Page structure & navigation** | Four valid pages with a matching header, nav, and footer, a unique `title` and description, and `aria-current` on the current link | 4 |
 | **Responsive images** | Every photo uses `picture` with AVIF, WebP, and JPEG, a `srcset` with two sizes, `sizes`, `width`/`height`, and lazy loading where required | 5 |
 | **Alt text & credits** | Descriptive `alt` on every photo, `alt=""` on the decorative logo, and a credit on every photo, video, and recording | 2 |
-| **Video** | Plays with controls, a poster, WebM and MP4 sources, working captions, and a fallback link | 3 |
+| **Video** | Plays with controls, a poster, WebM and MP4 sources, working captions, and a fallback link; the YouTube `iframe` plays and has a descriptive `title` | 3 |
 | **Audio** | All five birds play with OGG, M4A, and MP3 sources, a fallback link, a written description, and a working `id` link from the home page | 3 |
 | **CSS** | One shared stylesheet; media stays inside the column; shared `.card` and `.credit` styles; no Flexbox or Grid | 2 |
 | **Published and submitted** | Live on GitHub Pages with working media, and the pull request is filled in and submitted in Canvas | 1 |
@@ -171,6 +177,7 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 - [MDN — Responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images)
 - [MDN — `<picture>`: The Picture element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/picture)
 - [MDN — Video and audio content](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_video_and_audio)
+- [MDN — `<iframe>`: The Inline Frame element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe)
 - [MDN — `<track>`: The Embed Text Track element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track)
 - [MDN — WebVTT format](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API/Web_Video_Text_Tracks_Format)
 - [W3C — Alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/)

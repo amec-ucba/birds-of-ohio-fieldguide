@@ -30,6 +30,15 @@ audio {
   width: 100%;
 }
 
+/* Embedded videos (like YouTube) fill the column at a 16:9 shape */
+iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
 a {
   color: #8f1f17;  /* cardinal red, darkened for contrast on cream */
 }
