@@ -146,14 +146,14 @@ The five birds are `northern-cardinal`, `carolina-wren`, `american-robin`, `blue
 
 | Criteria | Full credit looks like | Points |
 | --- | --- | --- |
-| **Page structure & navigation** | Four valid pages with a matching header, nav, and footer, a unique `title` and description, and the `current` class on the current link | 4 |
-| **Responsive images** | Every photo uses `picture` with AVIF, WebP, and JPEG, a `srcset` with two sizes, `sizes`, `width`/`height`, and lazy loading where required | 5 |
-| **Alt text & credits** | Descriptive `alt` on every photo, `alt=""` on the decorative logo, and a credit on every photo, video, and recording | 2 |
-| **Video** | Plays with controls, a poster, WebM and MP4 sources, working captions, and a fallback link; the YouTube `iframe` plays and has a descriptive `title` | 3 |
-| **Audio** | All five birds play with OGG, M4A, and MP3 sources, a fallback link, a written description, and a working `id` link from the home page | 3 |
+| **Page structure & navigation** | Four valid pages with a matching header, nav, and footer, a unique `title` and description, and the `current` class on the current link | 5 |
+| **Responsive images** | Every photo uses `picture` with AVIF, WebP, and JPEG, a `srcset` with two sizes, `sizes`, `width`/`height`, and lazy loading where required | 6 |
+| **Alt text & credits** | Descriptive `alt` on every photo, `alt=""` on the decorative logo, and a credit on every photo, video, and recording | 3 |
+| **Video** | Plays with controls, a poster, WebM and MP4 sources, working captions, and a fallback link; the YouTube `iframe` plays and has a descriptive `title` | 4 |
+| **Audio** | All five birds play with OGG, M4A, and MP3 sources, a fallback link, a written description, and a working `id` link from the home page | 4 |
 | **CSS** | One shared stylesheet; media stays inside the column; shared `.card` and `.credit` styles; no Flexbox or Grid | 2 |
 | **Published and submitted** | Live on GitHub Pages with working media, and the pull request is filled in and submitted in Canvas | 1 |
-| | **Total** | **20** |
+| | **Total** | **25** |
 
 ## 📚 Resources
 
